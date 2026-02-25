@@ -1,7 +1,10 @@
 # EoF MCP Studio - Swift Implementation
 
-This is a Swift implementation of the Model Context Protocol (MCP) server 
-framework for macOS using AppKit and Cocoa SDK.
+This is a Model Context Protocol (MCP) server app for macOS
+
+Powerful plugin management, scripting environment, and MCP server for 
+modern AI based development workflows. Everything you need to manage 
+your MCP tools efficiently
 
 ## Features Implemented
 
@@ -14,30 +17,24 @@ framework for macOS using AppKit and Cocoa SDK.
 - Session management
 - Subscription notifications
 
-## Getting Started
+## Release
 
-- Recommended
-[Read MCP Server in depth before starting](README-MCPServer.md)
-
-1. Build the project using Xcode
-2. Run the application to start the MCP server
-3. The server will automatically load configuration from the application directory
-
-## Configuration
-
-The configuration is exported to the app bundle settings directory:
-```
-- Tools     : `Tools/` directory
-- Resources : `Resources/` directory  
-- Prompts   : `Prompts/` directory
-```
+Download current [Release]()
 
 ## Custom Tool Scripting
 
-- Recommended
-[Read scripting documentation before starting](README-Scripting.md)
+Advanced scripting environment with syntax highlighting
 
 ## Custom Tool Plugins
 
-- Recommended
-[Read sample plugin documentation before starting](README-SamplePlugin.md)
+Manage your native plugins written in any language that can create 
+binaries. A ToolSDK is provided by the App.
+
+## Security Management
+
+Control access and permissions for local files
+
+## Schema Configuration
+
+Define input/output schemas for custom tools
+
