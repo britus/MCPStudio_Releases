@@ -19,7 +19,7 @@ your MCP tools efficiently
 
 ## Release
 
-Download current [Release]()
+[Download latest Release](https://github.com/britus/MCPStudio_Releases/blob/master/MCPStudio.zip)
 
 ## Custom Tool Scripting
 
