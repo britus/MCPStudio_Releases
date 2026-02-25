@@ -17,9 +17,12 @@ your MCP tools efficiently
 - Session management
 - Subscription notifications
 
-## Release
+## Releases
 
-[Download latest Release](https://github.com/britus/MCPStudio_Releases/blob/master/MCPStudio.zip)
+[Download Release from GitHub](https://github.com/britus/MCPStudio_Releases/blob/master/MCPStudio.zip)
+
+or you can download our latest release from 
+[this link](https://apps.apple.com/app/eof-mcp-studio/id6758146445).
 
 ## Custom Tool Scripting
 
