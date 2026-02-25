@@ -1,4 +1,4 @@
-# EoF MCP Studio - Swift Implementation
+# EoF MCP Studio for macOS
 
 This is a Model Context Protocol (MCP) server app for macOS
 
