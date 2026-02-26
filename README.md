@@ -19,7 +19,7 @@ your MCP tools efficiently
 
 ## Releases
 
-[Download Release from GitHub](https://github.com/britus/MCPStudio_Releases/blob/master/MCPStudio.zip)
+[Download Release from GitHub](https://mcpstudio.eofsl.com/download.html)
 
 or you can download our latest release from 
 [this link](https://apps.apple.com/app/eof-mcp-studio/id6758146445).
