@@ -31,7 +31,7 @@ Advanced scripting environment with syntax highlighting
 ## Custom Tool Plugins
 
 Manage your native plugins written in any language that can create 
-binaries. A ToolSDK is provided by the App.
+binaries. A [ToolSDK](https://github.com/britus/MCPStudio_ToolSDK) is provided by the App.
 
 ## Security Management
 
