@@ -21,9 +21,6 @@ your MCP tools efficiently
 
 [Download EoF MCP Studio](https://mcpstudio.eofsl.com/download.html)
 
-or you can download our latest release from 
-[this link](https://apps.apple.com/app/eof-mcp-studio/id6758146445).
-
 ## Custom Tool Scripting
 
 Advanced scripting environment with syntax highlighting
