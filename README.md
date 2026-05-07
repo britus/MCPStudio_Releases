@@ -17,6 +17,7 @@ your MCP tools efficiently
 - Middleware support
 - Session management
 - Subscription notifications
+- Comprehensive Chat Bot
 
 ## Releases
 
