@@ -11,6 +11,7 @@ your MCP tools efficiently
 - Full MCP protocol implementation (version 2025-06-18)
 - HTTP transport layer
 - Three core services: Tools, Resources, Prompts
+- Skill System
 - Configuration-driven startup
 - Flexible tool registration
 - Middleware support
