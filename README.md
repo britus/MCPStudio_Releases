@@ -21,7 +21,8 @@ your MCP tools efficiently
 
 ## Releases
 
-[Download EoF MCP Studio](https://mcpstudio.eofsl.com/download.html)
+[Download EoF MCP Studio (sandboxed)](https://apps.apple.com/us/app/eof-mcp-studio/id6758146445?mt=12)
+[Download EoF MCP Studio (open)](https://mcpstudio.eofsl.com/download.html)
 
 ## Custom Tool Scripting
 
