@@ -9,7 +9,7 @@ your MCP tools efficiently
 ## Features Implemented
 
 - Full MCP protocol implementation (version 2025-06-18)
-- HTTP transport layer
+- HTTP/HTTPS transport layer
 - Three core services: Tools, Resources, Prompts
 - Skill System
 - Configuration-driven startup
@@ -21,8 +21,8 @@ your MCP tools efficiently
 
 ## Releases
 
-[Download EoF MCP Studio (sandboxed)](https://apps.apple.com/us/app/eof-mcp-studio/id6758146445?mt=12)
-[Download EoF MCP Studio (open)](https://mcpstudio.eofsl.com/download.html)
+[Download EoF MCP Studio (sandboxed version)](https://apps.apple.com/us/app/eof-mcp-studio/id6758146445?mt=12)
+[Download EoF MCP Studio (full access version)](https://mcpstudio.eofsl.com/download.html)
 
 ## Custom Tool Scripting
 
