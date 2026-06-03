@@ -39,19 +39,19 @@ function toolEntry(sid, handlerName, jsonParams) {
 
 ### File Operations
 ```javascript
-Swift.fileExists(path)          // Check existence
-Swift.readFile(path)            // Read file content
-Swift.saveFile(path, content)   // Write file
-Swift.openFile(path)            // Read with logging
-Swift.deleteFile(path)          // Delete file/directory
-Swift.listDirectory(path)       // List contents
-Swift.createDirectory(path)     // Create directory
+MCPStudio.fileExists(path)          // Check existence
+MCPStudio.readFile(path)            // Read file content
+MCPStudio.saveFile(path, content)   // Write file
+MCPStudio.openFile(path)            // Read with logging
+MCPStudio.deleteFile(path)          // Delete file/directory
+MCPStudio.listDirectory(path)       // List contents
+MCPStudio.createDirectory(path)     // Create directory
 ```
 
 ### Path Utilities
 ```javascript
-Swift.getDocumentsPath()        // Get Documents directory
-Swift.getTempPath()             // Get Temp directory
+MCPStudio.getDocumentsPath()        // Get Documents directory
+MCPStudio.getTempPath()             // Get Temp directory
 ```
 
 ### Logging
@@ -61,12 +61,12 @@ console.error(message)          // Error log
 console.warn(message)           // Warning log
 console.debug(message)          // Debug log
 
-Swift.log(type, code, message)  // Detailed logging
+MCPStudio.log(type, code, message)  // Detailed logging
 ```
 
 ### Result Setting
 ```javascript
-Swift.setToolResult(jsonString) // Set result from JavaScript
+MCPStudio.setToolResult(jsonString) // Set result from JavaScript
 ```
 
 ## Script Requirements
@@ -76,7 +76,7 @@ Every script MUST have a `toolEntry` function:
 ```javascript
 function toolEntry(sid, handlerName, jsonParams) {
     // Required signature
-    // Return JSON string or use Swift.setToolResult()
+    // Return JSON string or use MCPStudio.setToolResult()
 }
 ```
 
@@ -110,7 +110,7 @@ Run the test script to verify functionality using the MCP Studio Script Editor
 ### Reading and Processing a File
 ```javascript
 function processFile(params) {
-    var content = Swift.readFile(params.filePath);
+    var content = MCPStudio.readFile(params.filePath);
     if (!content) {
         return JSON.stringify({ error: "File not found" });
     }
@@ -132,9 +132,9 @@ function createReport(params) {
                  "Generated: " + new Date() + "\n\n" +
                  "Data: " + JSON.stringify(params.data);
     
-    var outputPath = Swift.getTempPath() + "/report.txt";
+    var outputPath = MCPStudio.getTempPath() + "/report.txt";
     
-    if (Swift.saveFile(outputPath, report)) {
+    if (MCPStudio.saveFile(outputPath, report)) {
         return JSON.stringify({
             text: "Report saved to: " + outputPath,
             metadata: { path: outputPath }
@@ -148,19 +148,19 @@ function createReport(params) {
 ### Batch Processing
 ```javascript
 function batchProcess(params) {
-    var files = Swift.listDirectory(params.directory);
+    var files = MCPStudio.listDirectory(params.directory);
     var results = [];
     
     files.forEach(function(file) {
         var path = params.directory + "/" + file;
-        var content = Swift.readFile(path);
+        var content = MCPStudio.readFile(path);
         
         if (content) {
             // Process content
             var processed = content.toUpperCase();
             var outPath = params.outputDir + "/" + file;
             
-            Swift.saveFile(outPath, processed);
+            MCPStudio.saveFile(outPath, processed);
             results.push({ file: file, status: "success" });
         }
     });
@@ -209,7 +209,7 @@ function toolEntry(sid, handlerName, jsonParams) {
 
 1. Use `console.log()` liberally
 2. Check log view for detailed logs
-3. Test file paths with `Swift.fileExists()`
+3. Test file paths with `MCPStudio.fileExists()`
 4. Validate JSON before parsing
 5. Use the test script to verify functionality
 
